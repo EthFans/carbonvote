@@ -4,6 +4,8 @@ require "sinatra/reloader"
 require "sinatra/config_file"
 require "sinatra/json"
 require 'redis'
+require 'active_support'
+require 'active_support/core_ext'
 
 class App < Sinatra::Base
   configure :development do
